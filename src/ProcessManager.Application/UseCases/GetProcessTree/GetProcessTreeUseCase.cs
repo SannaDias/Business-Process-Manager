@@ -24,7 +24,7 @@ public class GetProcessTreeUseCase
         var area = await _areaRepository.GetByIdAsync(areaId);
 
         if (area is null)
-            throw new DomainException("Área não encontrada.");
+            throw new NotFoundException("Área não encontrada.");
 
         // Busca os processos
         var processes = await _processRepository.GetByAreaIdAsync(areaId);

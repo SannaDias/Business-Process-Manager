@@ -20,7 +20,7 @@ namespace ProcessManager.Application.UseCases.DeleteProcess
             // Busca o processo com filhos
             var process = await _processRepository.GetByIdWithChildrenAsync(id);
             if (process is null)
-                throw new DomainException("Processo não encontrado.");
+                throw new NotFoundException("Processo não encontrado.");
 
             // Remove processo e sub-processos 
             await _processRepository.RemoveAsync(process);

@@ -27,10 +27,10 @@ public class Process
     public void AddSubProcess(Process subProcess)
     {
         if (subProcess.Id == Id)
-            throw new DomainException("Um processo não pode ser pai de si mesmo.");
+            throw new ConflictException("Um processo não pode ser pai de si mesmo.");
 
         if (subProcess.AreaId != AreaId)
-            throw new DomainException("Subprocessos devem pertencer à mesma área.");
+            throw new ConflictException("Subprocessos devem pertencer à mesma área.");
 
         _subProcesses.Add(subProcess);
     }
@@ -38,13 +38,13 @@ public class Process
     private void Validate()
     {
         if (string.IsNullOrWhiteSpace(Name))
-            throw new DomainException("O nome do processo é obrigatório.");
+            throw new ValidationException("O nome do processo é obrigatório.");
     }
 
     public void UpdateName(string name)
 {
     if (string.IsNullOrWhiteSpace(name))
-        throw new DomainException("Nome inválido.");
+        throw new ValidationException("Nome inválido.");
 
     Name = name;
 }
@@ -52,7 +52,7 @@ public class Process
 public void UpdateParent(Guid? parentProcessId)
 {
     if (parentProcessId == Id)
-        throw new DomainException("Um processo não pode ser pai de si mesmo.");
+        throw new ConflictException("Um processo não pode ser pai de si mesmo.");
 
     ParentProcessId = parentProcessId;
 }

@@ -5,6 +5,7 @@ C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\n
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\net9.0\ProcessManager.Domain.AssemblyInfoInputs.cache
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\net9.0\ProcessManager.Domain.AssemblyInfo.cs
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\net9.0\ProcessManager.Domain.csproj.CoreCompileInputs.cache
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\net9.0\ProcessManager.Domain.sourcelink.json
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\net9.0\ProcessManager.Domain.dll
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\net9.0\refint\ProcessManager.Domain.dll
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\net9.0\ProcessManager.Domain.pdb

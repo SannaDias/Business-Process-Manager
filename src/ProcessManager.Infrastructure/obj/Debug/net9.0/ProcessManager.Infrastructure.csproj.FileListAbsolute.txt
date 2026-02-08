@@ -11,6 +11,7 @@ C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Infrastructure\obj
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Infrastructure\obj\Debug\net9.0\ProcessManager.Infrastructure.AssemblyInfoInputs.cache
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Infrastructure\obj\Debug\net9.0\ProcessManager.Infrastructure.AssemblyInfo.cs
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Infrastructure\obj\Debug\net9.0\ProcessManager.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Infrastructure\obj\Debug\net9.0\ProcessManager.Infrastructure.sourcelink.json
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Infrastructure\obj\Debug\net9.0\ProcessM.8536AD8A.Up2Date
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Infrastructure\obj\Debug\net9.0\ProcessManager.Infrastructure.dll
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Infrastructure\obj\Debug\net9.0\refint\ProcessManager.Infrastructure.dll

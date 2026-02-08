@@ -23,7 +23,7 @@ public class CreateProcessUseCase
         // Garante que a área existe
         var area = await _areaRepository.GetByIdAsync(request.AreaId);
         if (area is null)
-            throw new DomainException("Área não encontrada.");
+            throw new NotFoundException("Área não encontrada.");
 
         // Cria o processo
         var process = new Process(
@@ -39,7 +39,7 @@ public class CreateProcessUseCase
                 await _processRepository.GetByIdAsync(request.ParentProcessId.Value);
 
             if (parentProcess is null)
-                throw new DomainException("Processo pai não encontrado.");
+                throw new NotFoundException("Processo pai não encontrado.");
 
             parentProcess.AddSubProcess(process);
         }

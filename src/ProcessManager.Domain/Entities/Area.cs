@@ -22,7 +22,7 @@ public class Area
     public void AddProcess(Process process)
     {
         if (process.AreaId != Id)
-            throw new DomainException("O processo não pertence a esta área.");
+            throw new ConflictException("O processo não pertence a esta área.");
 
         _processes.Add(process);
     }
@@ -30,6 +30,6 @@ public class Area
     private void Validate()
     {
         if (string.IsNullOrWhiteSpace(Name))
-            throw new DomainException("O nome da área é obrigatório.");
+            throw new ValidationException("O nome da área é obrigatório.");
     }
 }

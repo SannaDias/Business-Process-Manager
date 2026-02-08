@@ -17,7 +17,7 @@ public class UpdateProcessUseCase
     {
         var process = await _processRepository.GetByIdAsync(request.Id);
         if (process is null)
-            throw new DomainException("Processo não encontrado.");
+            throw new NotFoundException("Processo não encontrado.");
 
         process.UpdateName(request.Name);
         process.UpdateParent(request.ParentProcessId);

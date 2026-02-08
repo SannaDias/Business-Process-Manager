@@ -134,6 +134,7 @@ C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.API\obj\Debug\net9
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.API\obj\Debug\net9.0\ProcessManager.API.csproj.CoreCompileInputs.cache
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.API\obj\Debug\net9.0\ProcessManager.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.API\obj\Debug\net9.0\ProcessManager.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.API\obj\Debug\net9.0\ProcessManager.API.sourcelink.json
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.API\obj\Debug\net9.0\scopedcss\bundle\ProcessManager.API.styles.css
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.API\obj\Debug\net9.0\staticwebassets.build.json
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.API\obj\Debug\net9.0\staticwebassets.build.json.cache

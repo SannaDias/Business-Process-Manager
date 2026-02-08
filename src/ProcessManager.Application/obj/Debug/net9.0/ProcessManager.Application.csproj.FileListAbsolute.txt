@@ -8,6 +8,7 @@ C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\De
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\ProcessManager.Application.AssemblyInfoInputs.cache
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\ProcessManager.Application.AssemblyInfo.cs
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\ProcessManager.Application.csproj.CoreCompileInputs.cache
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\ProcessManager.Application.sourcelink.json
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\ProcessM.CC83C49F.Up2Date
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\ProcessManager.Application.dll
 C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\refint\ProcessManager.Application.dll
