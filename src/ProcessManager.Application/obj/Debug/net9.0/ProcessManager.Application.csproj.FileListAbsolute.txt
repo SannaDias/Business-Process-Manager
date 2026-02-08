@@ -1,0 +1,15 @@
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\bin\Debug\net9.0\ProcessManager.Application.deps.json
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\bin\Debug\net9.0\ProcessManager.Application.dll
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\bin\Debug\net9.0\ProcessManager.Application.pdb
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\bin\Debug\net9.0\ProcessManager.Domain.dll
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\bin\Debug\net9.0\ProcessManager.Domain.pdb
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\ProcessManager.Application.csproj.AssemblyReference.cache
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\ProcessManager.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\ProcessManager.Application.AssemblyInfoInputs.cache
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\ProcessManager.Application.AssemblyInfo.cs
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\ProcessManager.Application.csproj.CoreCompileInputs.cache
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\ProcessM.CC83C49F.Up2Date
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\ProcessManager.Application.dll
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\refint\ProcessManager.Application.dll
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\ProcessManager.Application.pdb
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Application\obj\Debug\net9.0\ref\ProcessManager.Application.dll

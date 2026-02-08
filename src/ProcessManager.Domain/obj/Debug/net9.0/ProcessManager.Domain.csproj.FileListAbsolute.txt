@@ -1,0 +1,11 @@
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\bin\Debug\net9.0\ProcessManager.Domain.deps.json
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\bin\Debug\net9.0\ProcessManager.Domain.dll
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\bin\Debug\net9.0\ProcessManager.Domain.pdb
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\net9.0\ProcessManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\net9.0\ProcessManager.Domain.AssemblyInfoInputs.cache
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\net9.0\ProcessManager.Domain.AssemblyInfo.cs
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\net9.0\ProcessManager.Domain.csproj.CoreCompileInputs.cache
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\net9.0\ProcessManager.Domain.dll
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\net9.0\refint\ProcessManager.Domain.dll
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\net9.0\ProcessManager.Domain.pdb
+C:\Sanna\Projetos e Estudos\ProcessManager\src\ProcessManager.Domain\obj\Debug\net9.0\ref\ProcessManager.Domain.dll
