@@ -1,21 +1,26 @@
 using Microsoft.AspNetCore.Mvc;
-using ProcessManager.Application.UseCases.CreateProcess; 
-using ProcessManager.Application.DTOs;    
-using ProcessManager.Domain.Exceptions;
-
-
-namespace ProcessManager.API.Controllers;
-
+using ProcessManager.Application.UseCases.CreateArea;
+using ProcessManager.Application.UseCases.GetProcessTree;
+using ProcessManager.Application.DTOs;
 [ApiController]
-[Route("api/processes")]
-public class ProcessesController : ControllerBase
+[Route("api/areas")]
+public class AreasController : ControllerBase
 {
     [HttpPost]
     public async Task<IActionResult> Create(
-        [FromServices] CreateProcessUseCase useCase,
-        [FromBody] CreateProcessRequest request)
+        [FromServices] CreateAreaUseCase useCase,
+        [FromBody] CreateAreaRequest request)
     {
         var id = await useCase.ExecuteAsync(request);
         return CreatedAtAction(nameof(Create), new { id }, null);
+    }
+
+    [HttpGet("{areaId}/processes")]
+    public async Task<IActionResult> GetProcesses(
+        Guid areaId,
+        [FromServices] GetProcessTreeUseCase useCase)
+    {
+        var result = await useCase.ExecuteAsync(areaId);
+        return Ok(result);
     }
 }

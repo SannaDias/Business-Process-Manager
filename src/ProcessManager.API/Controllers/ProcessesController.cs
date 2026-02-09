@@ -1,33 +1,29 @@
 using Microsoft.AspNetCore.Mvc;
-using ProcessManager.Application.UseCases.CreateArea;
-using ProcessManager.Application.UseCases.GetProcessTree;
 using ProcessManager.Application.DTOs;
-using ProcessManager.Application.UseCases.DeleteProcess;
+using ProcessManager.Application.UseCases.CreateProcess;
 using ProcessManager.Application.UseCases.UpdateProcess;
-
-
-namespace ProcessManager.API.Controllers;
-
+using ProcessManager.Application.UseCases.DeleteProcess;
 [ApiController]
-[Route("api/areas")]
-public class AreasController : ControllerBase
+[Route("api/processes")]
+public class ProcessesController : ControllerBase
 {
     [HttpPost]
     public async Task<IActionResult> Create(
-        [FromServices] CreateAreaUseCase useCase,
-        [FromBody] CreateAreaRequest request)
+        [FromServices] CreateProcessUseCase useCase,
+        [FromBody] CreateProcessRequest request)
     {
         var id = await useCase.ExecuteAsync(request);
         return CreatedAtAction(nameof(Create), new { id }, null);
     }
 
-    [HttpGet("{areaId}/processes")]
-    public async Task<IActionResult> GetProcesses(
-        Guid areaId,
-        [FromServices] GetProcessTreeUseCase useCase)
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Update(
+        Guid id,
+        [FromBody] UpdateProcessRequest request,
+        [FromServices] UpdateProcessUseCase useCase)
     {
-        var result = await useCase.ExecuteAsync(areaId);
-        return Ok(result);
+        await useCase.ExecuteAsync(id, request);
+        return NoContent();
     }
 
     [HttpDelete("{id}")]
@@ -38,16 +34,4 @@ public class AreasController : ControllerBase
         await useCase.ExecuteAsync(id);
         return NoContent();
     }
-    
-    [HttpPut("{id}")]
-    public async Task<IActionResult> Update(
-        Guid id,
-        [FromBody] UpdateProcessRequest request,
-        [FromServices] UpdateProcessUseCase useCase)
-    {
-        request.Id = id;
-        await useCase.ExecuteAsync(request);
-        return NoContent();
-    }
-
 }

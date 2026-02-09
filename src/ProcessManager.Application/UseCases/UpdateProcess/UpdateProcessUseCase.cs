@@ -13,15 +13,15 @@ public class UpdateProcessUseCase
         _processRepository = processRepository;
     }
 
-    public async Task ExecuteAsync(UpdateProcessRequest request)
-    {
-        var process = await _processRepository.GetByIdAsync(request.Id);
-        if (process is null)
-            throw new NotFoundException("Processo não encontrado.");
+   public async Task ExecuteAsync(Guid id, UpdateProcessRequest request)
+{
+    var process = await _processRepository.GetByIdAsync(id);
 
-        process.UpdateName(request.Name);
-        process.UpdateParent(request.ParentProcessId);
+    if (process == null)
+        throw new NotFoundException("Processo não encontrado");
 
-        await _processRepository.UpdateAsync(process);
-    }
+    process.UpdateName(request.Name);
+
+    await _processRepository.UpdateAsync(process);
+}
 }

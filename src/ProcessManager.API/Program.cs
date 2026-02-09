@@ -8,10 +8,23 @@ using ProcessManager.Application.UseCases.UpdateProcess;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Controllers + Swagger
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//cors
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("FrontendPolicy", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:5173")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
 
 // Infrastructure
 builder.Services.AddInfrastructure(builder.Configuration);
@@ -32,6 +45,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("FrontendPolicy");
 app.MapControllers();
 app.UseHttpsRedirection();
 app.UseAuthorization();
