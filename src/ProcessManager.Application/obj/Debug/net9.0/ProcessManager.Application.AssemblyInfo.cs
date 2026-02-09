@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProcessManager.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d532116d6a9961203c42a7917f06bbb3e00ddcb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dda27e6ecdbbb091861eff62655e1e74368ea1fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProcessManager.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProcessManager.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

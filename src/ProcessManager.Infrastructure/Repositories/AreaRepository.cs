@@ -26,4 +26,9 @@ public class AreaRepository : IAreaRepository
             .Include(a => a.Processes)
             .FirstOrDefaultAsync(a => a.Id == id);
     }
+
+    public async Task<List<Area>> GetAllAsync()
+    {
+        return await _context.Areas.ToListAsync();
+    }
 }

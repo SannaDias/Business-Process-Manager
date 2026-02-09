@@ -4,6 +4,7 @@ using ProcessManager.Application.UseCases.GetProcessTree;
 using ProcessManager.Infrastructure;
 using ProcessManager.Application.UseCases.DeleteProcess;
 using ProcessManager.Application.UseCases.UpdateProcess;
+using ProcessManager.Application.UseCases.ListAreas;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -35,6 +36,7 @@ builder.Services.AddScoped<CreateProcessUseCase>();
 builder.Services.AddScoped<GetProcessTreeUseCase>();
 builder.Services.AddScoped<DeleteProcessUseCase>();
 builder.Services.AddScoped<UpdateProcessUseCase>();
+builder.Services.AddScoped<ListAreasUseCase>();
 
 var app = builder.Build();
 

@@ -6,4 +6,6 @@ public interface IAreaRepository
 {
     Task AddAsync(Area area);
     Task<Area?> GetByIdAsync(Guid id);
+
+    Task<List<Area>> GetAllAsync();
 }

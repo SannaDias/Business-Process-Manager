@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using ProcessManager.Application.UseCases.CreateArea;
 using ProcessManager.Application.UseCases.GetProcessTree;
 using ProcessManager.Application.DTOs;
+using ProcessManager.Application.UseCases.ListAreas;
+
 [ApiController]
 [Route("api/areas")]
 public class AreasController : ControllerBase
@@ -23,4 +25,13 @@ public class AreasController : ControllerBase
         var result = await useCase.ExecuteAsync(areaId);
         return Ok(result);
     }
+
+    [HttpGet]
+    [HttpGet]
+public async Task<IActionResult> GetAll(
+    [FromServices] ListAreasUseCase useCase)
+{
+    var result = await useCase.ExecuteAsync();
+    return Ok(result);
+}
 }
