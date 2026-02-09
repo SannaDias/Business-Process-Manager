@@ -15,15 +15,20 @@ namespace ProcessManager.Application.UseCases.DeleteProcess
             _processRepository = processRepository;
         }
 
-        public async Task ExecuteAsync(Guid id)
-        {
-            // Busca o processo com filhos
-            var process = await _processRepository.GetByIdWithChildrenAsync(id);
-            if (process is null)
-                throw new NotFoundException("Processo não encontrado.");
+      public async Task ExecuteAsync(Guid id)
+{
+    var process = await _processRepository.GetByIdWithChildrenAsync(id);
 
-            // Remove processo e sub-processos 
-            await _processRepository.RemoveAsync(process);
-        }
+    if (process is null)
+        throw new NotFoundException("Processo não encontrado.");
+
+    if (process.SubProcesses.Any())
+        throw new ConflictException(
+            "Não é possível remover um processo que possui subprocessos."
+        );
+
+    await _processRepository.RemoveAsync(process);
+}
+
     }
 }
